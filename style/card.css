@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Primary */
+    --Very-Dark-Blue: hsl(233, 47%, 7%);
+    --Dark-Desaturated-Blue: hsl(244, 38%, 16%);
+    --Soft-Violet: hsl(277, 64%, 61%);
+    --Soft-Dark-Violet: hsl(277, 86%, 22%);
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Slightly-Transparent-White: hsla(0, 0%, 100%, 0.75);
+    --Slightly-Transparent-White2: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+    color: var(--White);
+}
+
+
+@media screen and (max-width: 990px) {
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    margin-top: 2rem;
+    min-width: 20rem;
+    background-color: var(--Dark-Desaturated-Blue);
+    border-radius: 12px;
+}
+
+.op {
+    background-color: var(--Soft-Dark-Violet);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+img {
+    width: 20rem;
+    height: 13rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    opacity: 0.4;
+}
+
+h1 {
+    font-family: 'Lexend Deca', sans-serif;
+    padding-top: 1.5rem;
+    text-align: center;
+    max-width: 15rem;
+    font-size: 1.6em;
+    margin: auto auto;
+}
+
+p {
+    color: var(--Slightly-Transparent-White);
+    line-height: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    padding-top: 2rem;
+    max-width: 14rem;
+    text-align: center;
+    margin: auto auto;
+    font-size: small;
+}
+
+h1 > span {
+    color:var(--Soft-Violet);
+}
+
+.num-text {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.num-text p {
+    margin:5px;
+    padding:0;
+    line-height: 1;
+    font-size: x-small;
+    color: var(--Slightly-Transparent-White2);
+}
+
+.companies{
+    margin-bottom: 2rem;
+}
+
+.templates {
+    margin-bottom: 2rem;
+}
+
+}
+
+
+
+@media screen and (min-width: 990px) {
+
+main {
+    display: grid;
+    place-items: center;
+    margin-top: 8rem;
+}
+
+.text > h1{
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 3rem 3rem 2rem;
+    line-height: 2rem;
+}
+
+h1 > span {
+    color:var(--Soft-Violet);
+}
+
+.text > p{
+    color: var(--Slightly-Transparent-White);
+    font-family: 'Inter', sans-serif;
+    padding: 0 3rem;
+    line-height: 1.5rem;
+    font-size: small;
+}
+
+.num-text {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding: 4rem 3rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.num-text p{
+    line-height: 2;
+    font-size: x-small;
+    color: var(--Slightly-Transparent-White2);
+}
+
+.card {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 60rem;
+    background-color: var(--Dark-Desaturated-Blue);
+}
+
+.op {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: var(--Soft-Dark-Violet);
+}
+
+img {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    max-width: 30rem;
+    min-height: 25rem;
+    opacity: 0.4;
+}
+
+
+
+}
